@@ -1,7 +1,7 @@
 {
   "name": "react-live",
-  "version": "2.4.1",
-  "description": "A production-focused playground for live editing React code",
+  "version": "2.4.2",
+  "description": "Forked React-Live",
   "main": "dist/react-live.cjs.js",
   "typings": "./typings/react-live.d.ts",
   "jsnext:main": "dist/react-live.es.js",

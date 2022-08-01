@@ -5,25 +5,21 @@ import Highlight, { Prism } from 'prism-react-renderer';
 import { theme as liveTheme } from '../../constants/theme';
 
 const CodeEditor = props => {
-  const [state, setState] = useState({
-    code: props.code || ''
-  });
+  const [code, setCode] = useState(props.code || '');
 
   useEffect(() => {
-    if (state.prevCodeProp && props.code !== state.prevCodeProp) {
-      setState({ code: props.code, prevCodeProp: props.code });
-    }
+    setCode(props.code);
   }, [props.code]);
 
   const updateContent = code => {
-    setState({ code });
+    setCode(code);
   };
 
   useEffect(() => {
     if (props.onChange) {
-      props.onChange(state.code);
+      props.onChange(code);
     }
-  }, [state.code]);
+  }, [code]);
 
   const highlightCode = code => (
     <Highlight
@@ -50,7 +46,6 @@ const CodeEditor = props => {
 
   // eslint-disable-next-line no-unused-vars
   const { style, theme, onChange, ...rest } = props;
-  const { code } = state;
 
   const baseTheme = theme && typeof theme.plain === 'object' ? theme.plain : {};
 
