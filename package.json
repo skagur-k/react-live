@@ -1,5 +1,5 @@
 {
-  "name": "@skaui/react-live",
+  "name": "@skagur-k/react-live",
   "version": "2.4.2",
   "description": "Forked React-Live",
   "main": "dist/react-live.cjs.js",
