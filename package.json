@@ -11,9 +11,9 @@
     "storybook": "start-storybook -p 9001",
     "storybook:build": "build-storybook -o .out",
     "prebuild:lib": "rm -rf lib/*",
-    "prebuild": "yarn lint",
+    "prebuild": "pnpm lint",
     "build": "rollup -c",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "pnpm run build",
     "test": "jest",
     "test:typings": "typings-tester --dir typings",
     "prettier": "prettier --config .prettierrc --write \"./**/*.{js,css,html}\"",
@@ -73,13 +73,13 @@
     "react-live.css",
     "typings/react-live.d.ts"
   ],
-  "author": "Phil Plückthun <phil@plckthn.me> (https://github.com/philpl)",
+  "author": "skagur-k <skagur0329@gmail.com> (https://github.com/skagur-k)",
   "bugs": {
-    "url": "https://github.com/philpl/react-live/issues"
+    "url": "https://github.com/skagur-k/react-live/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philpl/react-live.git"
+    "url": "git+https://github.com/skagur-k/react-live.git"
   },
   "engines": {
     "npm": ">= 2.0.0",
